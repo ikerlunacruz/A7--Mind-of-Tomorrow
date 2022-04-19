@@ -1,17 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+html{
+    font-size: 16px;
+}
 
 /* Redimensión de fuente utilizando rem */
 p{
     font-size: 1rem;
 }
 
-h1{
+.fuente {
+    font-size: 220%;
+    text-align: center;
+}
+
+.titulo {
+    background-image: url(../img/banner-2.jpg);
+    height: 100vh;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.section1 {
+  height: 100%;
+  width: 100%;  
+}
+
+.h1 {
+    font-size: 360%;
+}
+
+.p1 {
+    font-size: 220%;
+}
+
+.p2 {
+    text-align: center;
+}
+
+.imgc1 {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding-bottom: 10%;
+  
+}
+
+.col3 {
+    padding-top: 05%;
+
+}
+
+.h4{
     font-size: 300%;
 }
 
-img {
-    height: 80%;
-    width: 80%;
+.p4{
+    font-size: 220%;
+}
+
+
+
+.imgc3 {
+    height: 100%;
+    width: 100%;  
+}
+
+.h2 {
+    text-align: center;
+    font-size: 300%;
+}
+
+.fondo {
+    background-color: rgb(127, 255, 176);
+}
+
+.img4{
+    height: 100%;
+    width: 100%;
 }
 
 h2{
@@ -30,10 +100,12 @@ h5{
     font-size: 1.15rem;
 }
 
-h6{
-    font-size: 1.05rem;
-}
 
+
+.h6{
+font-size: 300%;
+text-align: center;
+}
 /**************************/
 
 /* clases predefinidas */
@@ -46,58 +118,39 @@ body{
     margin: 0;
 }
 
+.fondo2 {
+    background-color: black;
+}
+
+.p3 {
+    color: white;
+    padding-left: 20%;
+    font-size: 10px;
+}
+
+.p4 {
+    color: white;
+    padding-left: 20%;
+    font-size: 10px;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-.section0 {
-    background-color: white;
-}
-
-.section1 {
-background-color: #F5EEF5;
-}
-
-.section2 {
-background-color: #faf5f3;
-}
-
-.section3 {
-background-color: #f2f9f8;
-}
-
-.section4 {
-    background-color: #000;
-    color: white;
-}
-
-.negrita {
-    font-weight: bold;
-}
-
-h1 {
-    color: darkcyan;
-    font-weight: bold;
-}
-
-.negrita {
-    font-weight: bold;
-}
-
-h2 {
-    color: grey;
-}
-
-img {
-    border-radius: 10px;
-}
-
 /* Diseño de columnas */
 .column-1{
     width: 100%;
     float: left;
+    margin-top: -4px;
+
+}
+
+.title2{
+    background-color: blue;
+    margin-top: -4px;
 }
 
 .column-2{
@@ -130,10 +183,6 @@ img {
     float: left;
 }
 
-.padding-m {
-   padding: 2.5%;
-}
-
 /* Otras clases */
 /* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 .flex{
@@ -142,7 +191,7 @@ img {
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     /* column-2 pasará de tener 50% a 100% */
     .column-2{
         width: 100%;
@@ -154,15 +203,39 @@ img {
     /* column-4 pasará de tener 25% a 50% */
     .column-4{
         width: 50%;
-        float: left;
     }
-    img {
-display: block;
-margin: 0px auto;
-width: 90%;
-}
+    .titulo {
+        font-size: 350%;
+    }
+    .h1 {
+        padding: 5%;
+        font-size: 340%;
+    }
+    .p1 {
+        padding: 5%;
+        font-size: 260%;
+    }
+    .h2 {
+        padding: 5%;
+    }
+    .h4 {
+        padding-left: 10%;
+        padding-right: 10%;
 
-h1,h2,h3,h4,h5,p, b {
-margin-left: 5%;}
+        font-size: 340%;
+    }
+    .p4 {
+        padding-left: 10%;
+        padding-right: 10%;  
+      }
+      .img4 {
+          margin-top: -4px;
+      }
+      .p3 {
+        font-size: 160%; 
 
-}
+      }
+      .p4 {
+         font-size: 160%; 
+      }
+    }
